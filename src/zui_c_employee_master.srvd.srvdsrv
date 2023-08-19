@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for employee master'
+define service ZUI_C_EMPLOYEE_MASTER {
+  expose ZC_HR_EMPLOYEE_MASTER as EmployeeMaster;
+}

@@ -1,0 +1,20 @@
+managed implementation in class zbp_i_hr_employee_master unique;
+
+define behavior for ZI_HR_EMPLOYEE_MASTER alias emp
+persistent table ztb_hr_emp_m
+etag master last_changed_at
+lock master
+{
+
+  field ( numbering : managed, readonly ) mykey;
+
+  // administrative fields (read only)
+  //field ( readonly ) last_changed_at, last_changed_by, created_at, created_by;
+
+  create;
+  update;
+  delete;
+
+  // instance action and dynamic action control
+//  action ( features : instance ) journalEntry result [1] $self;
+}

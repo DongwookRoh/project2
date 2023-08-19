@@ -1,0 +1,10 @@
+projection;
+
+define behavior for ZC_HR_EMPLOYEE_MASTER //alias <alias_name>
+{
+  use create;
+  use update;
+  use delete;
+
+//  use action journalEntry;
+}
